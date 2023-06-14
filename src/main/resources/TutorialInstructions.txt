@@ -1,0 +1,84 @@
+- In the main menu you will be presented with 4 buttons with the label: "new game",
+ "continue game","how to play" and "edit file".
+
+-"continue game" will only be available when the user has left mid-game. This button will bring the user back to
+where they left of.
+
+-"How to Play" will present the user to the applications user-manuel. The user-manuel explains how to utilize
+ and navigate through the application. The user-manuel is the file you are currently reading.
+
+-The button "File Editor" will present the user to 4 buttons, open file, save file, create file and main menu.
+Here you will be able to open a file through the "open file" button and rewrite it. Then by pressing the "save file"
+button it will write to file the edits the user has made. "Create file" button will create a new file based on the user 
+pre-made inputs in the TextArea. If the user has not entered anything in the TextArea, the file will be empty.
+The first line of the TextArea is also the name of the file.
+
+- By left-clicking the first button "new game", you will be presented to a new page with 6 buttons
+with the label "Open file", "save file", "create new player", "create new goals", "main menu" and "play".
+
+- To play a game you have to start of by selecting a path file. This can be done through left-clicking the
+ "Open file" button. Here you can open any file with the ending ".paths" and the program will read it and check it
+ for any format errors. If any errors is found, like broken link or format errors, it will return a message to the user
+ with information about the problem.
+
+-If you are using a custom file from another folder than the applications resource folder you can use the button
+"save file" to move the selected file to the applications resource folder, after it being selected by the "Open File" button. 
+This makes it easier to find the file if you wish to use it again.
+
+-Next you have to create a player. This can be done through the "Create New Player" button which will open a window
+where the user can input the amount of health, gold, score, name and items you want to start with, where only the name is a
+mandatory input and the other are optional. Note that health has to be above 0 and under 100. The default setting will
+set the health to 100, gold to 0 and score to 0 and inventory being empty. There is also an option to add a starting item to your player.
+You can do so by typing in the name of your preferred item in the format "item1, item2, item3, ...".
+
+-Then you have to create goals. This can be done by left-clicking "create new goal" button.
+ If you don't input any goals the game will be completed at the first passage. The goals can be a
+ health, gold or score amount you wish to attain or an item you want in your inventory.
+
+-There is also an option called "Disable mini-games", which is mini-games that will appear randomly during the game.
+This can be disabled by left-clicking the empty square next to the label "Disable mini-games"
+
+-Once all the steps above are completed you are ready to hit the "Play" button, which will put you in a new window with
+the first passage in the story file.
+
+-In order to complete the game you have to obtain the goals you set in the previous page. Every time you hit a button
+in a passage there is a chance for an action that can affect your player state. If there is an action or not, is dependent
+on your selected path-file. Actions can also occur during a mini-game. If you loose a mini-game you will lose health, 
+and if you win you recieve gold.
+
+-If your health were to drop below 0, the user will be presented with a message "You have died". Here the user will
+have to options: a button with the label "respawn" and a button with the label "Main Menu". Left-clicking the "Main Menu" button will
+send the user back to the main menu of the application. If you want to restart/try again you can do so by
+left-clicking the "Respawn" button and the game will send you back to the first passage with the original player state.
+
+-When all the goals are completed the game will present the user with a message "You have won" and give the user two choices: 
+a "Free Play" button and a "Main Menu" button. by left-clicking the "Main Menu" button will the user be sent to the main menu of the 
+application. By left-clikcing the "Free Play" button will the game continue and the user may play as much as they want.
+
+-If you get stuck in a game, you can use the menubar in the top left, pressing view and then main menu. This will put you
+back in the main menu.
+
+-If you wish to create a custom paths-file with your own story you can do so by following the format bellow.
+First you have to start of by giving your path a tittle. You can do so by entering the tittle on the first line of
+the document. On a new line you can define passage by using "::"  were you insert the tittle on the same line and the
+content/description of the passage on the next line. Passage Example: lets say you want to create a passage named
+"Home" with the description "Home sweet home" you can do so by typing it in like this in the file"::Home"
+and then go to a new line and enter the description "Home sweet home". It should look like this:
+
+::Home
+Home sweet home
+
+Then if you want a link on the passage, for example named " Go back to the beginning" that leads to the passage "Beginning".
+You can do so by typing the name between these "[]" and the reference on the same line between these "()".
+It should look like this:
+
+::Home
+Home sweet home
+[Go back to the beginning] (Beginning)
+
+You can add actions to the links. Let's say you want to add a gold action to the link from above. You have
+to type in this "]Gold Action, 100" on the same line as the link. It should look like this:
+
+::Home
+Home sweet home
+[Go back to the beginning] (Beginning) ]Gold Action, 100

@@ -1,0 +1,19 @@
+Faulty-File Test
+
+::Beginnings
+You are in a small, simly lit room. There is a door in front of you.
+[You try to open the door] (Another Room) ]ealth Action, 10
+
+::Another Room
+The door opens to another room. You see a sesk with a large, dusty book.
+[Open the book] (The Book of Spells) ]Gold Action, 3 ]Health Action, -20
+[Go back] (Beginnings)
+
+::The Book of Spells
+You are in a magical tree, filled with yummy honey.
+[Eat the honey] (Tree crown) ]Score Action, 80
+[Go back] (Another Room)
+
+::Tree crown
+This is the top of the tree.
+(The Book of Spells) ]Health Action, 10

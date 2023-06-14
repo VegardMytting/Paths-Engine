@@ -1,0 +1,62 @@
+Dungeon and dragons
+
+::Beginnings
+You have been captured and handcuffed in a prissonbox
+[You try to escape] (The Arena) ]Health Action, -5  ]Score Action, 10
+[You just wait] (The Arena)  ]Score Action, 10
+
+::The Arena
+You wake up in a arena with 4 other guys and you get told to fight to your death. The closest guy to you start running towards you.
+[Attack him] (Fight) ]Health Action, -5  ]Score Action, 10
+[Run away] (From a distance)  ]Health Action, 5  ]Score Action, 10
+
+::Fight
+He blocks your attack.
+[Attack again] (Kill) ]Score Action, 50 ]Gold Action,  69 ]Inventory Action, Axe
+[Run away] (From a distance) ]Score Action,  10
+
+::Kill
+You managed to kill the guy and you are now watching the others fight from a distance
+[Wait] (One guy dies) ]Score Action, 10
+
+::From a distance
+You managed to get away and you are currently watching the others fight
+[Wait] (One guy dies) ]Score Action, 10 
+[Run back and attack] (Fight.) ]Score Action, 10
+
+::One guy dies 
+One of the guys fighting in the arena falls to the ground, defeated. The others continue to fight. 
+[Wait] (Another guy dies) ]Score Action, 10 
+[Run back and attack] (Fight.) ]Score Action, 10
+
+::Fight.
+You run back into the fray and attack one of the remaining fighters. 
+[Attack] (Kill.) ]Score Action, 50 ]Gold Action, 69 ]Inventory Action, Sword
+[Dodge] (From a distance.) ]Score Action, 10
+
+::Kill.
+Your attack lands and you defeat another fighter. Only one remains. 
+[Attack] (You win the arena games) ]Score Action, 100 ]Gold Action, 100
+[Dodge] (From a distance.) ]Score Action, 10
+
+::From a distance.
+You dodge the remaining fighters attack and move away from him.
+[Wait] (You win the arena games) ]Score Action, 100 ]Gold Action, 100
+[Attack] (You win the arena games) ]Score Action, 100 ]Gold Action, 100 ]Inventory Action, Shield
+
+::Another guy dies
+You watch another guy fall to the ground.
+[Wait] (From a distance.) ]Score Action, 10
+[Attack] (Kill.) ]Score Action, 10 ]Gold Action, 100
+
+::You win the arena games
+You have emerged victorious from the arena. The crowd cheers as you are declared the winner. 
+[End] (A dragon appears) ]Score Action, 100 ]Gold Action, 100
+
+::A dragon appears
+A huge dragon appears and start killing everyone.
+[Run] (Running) ]Health Action, -100
+
+::Running
+You start running
+[Back] (A dragon appears)

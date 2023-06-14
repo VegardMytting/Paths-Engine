@@ -1,0 +1,17 @@
+Dead-End-Passage Test
+
+::Beginnings
+You are in a small, simly lit room. There is a door in front of you.
+[You try to open the door] (Another Room) ]Health Action, 10
+
+::Another Room
+The door opens to another room. You see a sesk with a large, dusty book.
+[Open the book] (The Book of Spells) ]Gold Action, 3 ]Score Action, -20
+[Go back] (Beginnings)
+
+::The Book of Spells
+You are in a magical tree, filled with yummy honey.
+[Broken Link] (Tree Crown) ]Inventory Action, Necklace
+[Go back] (Another Room)
+
+::Another Room
